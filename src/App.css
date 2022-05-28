@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -65,4 +65,24 @@
   border-color: rgb(4, 44, 44);
   border-radius: 2px;
   border-style: solid;
+}
+
+.classButtonPrimary {
+  background-color: rgb(4, 44, 44);
+  color: white;
+  border-color: rgb(4, 44, 44);
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.buttonGreen {
+  background-color: rgb(4, 44, 44);
+  color: white;
+  border-color: rgb(4, 44, 44);
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.containerPrincipal {
+  display: flex;
 }
