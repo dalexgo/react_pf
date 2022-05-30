@@ -39,7 +39,7 @@ function App() {
 
   // make function to render button wuth number
   const RenderButton = (props) => {
-    let classBtn = "btn btn-sm";
+    let classBtn = "btn btn-sm rowButtons";
     //set de button for de plaz active or desactive
     if (btnActive === props.plaz) {
       classBtn += " active";
@@ -94,45 +94,39 @@ function App() {
   }; */
 
 
-
+/*TODO ADD PANEL/BAR
+  TODO ADD TNA EXPIRE DATE
+  TODO FIX FUNCTION TO GET CURRENT TASA
+  TODO ADD FUNCTION TO GET VALUE OF DOLAR
+   */
   return (
     <div className="App">
       <header className="App-header">
-        <div className="containerPrincipal">
+        <div className="rowFlex">
 
-        <div>
+        <div className="columnFlex">
             <RenderInputs statePasedFun={setState} statePased={state} />
 
-            <div className="divCuadro">
-              <div className="flexDivRow">  
+            <div className="">
+
+            <div className="">
+              <span className="boldFont">¿A cuántos días?</span>
+              </div>
+
+              <div className="flexDivRow grid-flow"> 
                 <RenderButton plaz="30" />
                 <RenderButton plaz="60" />
                 <RenderButton plaz="90" />
+
+  
+
+
               </div>
 
               <div className="flexDivRow">
-                <img src="obtener-rentas.83f187ed.svg" alt="" />
-              </div>
-            </div>
-
-            <div className="container">
-              <div className="flexDivColumn">
-                <div className="col-12">
-                  <div className="flexDivColumn">
-                    <button className="btn" onClick={() => getInterest()}>Obtener Interés</button>
-                    <button className="btn" onClick={() => doClean()}>Limpiar</button>
-                  </div>
-                </div>
-              </div>
-            </div>  
-
-
- 
-        </div>
-
-
-          <div>
-              <div className="container">
+                <img src="obtener-rentas.83f187ed.jpg" className="myImage1" alt="" />
+              
+                <div className="container">
                 <div className="flexDivColumn">
                   <div className="col-12">
                     <div className="flexDivColumn">
@@ -142,13 +136,40 @@ function App() {
                       <span className="label">Al final del plazo recibís</span>
                       
                       <div className="">
-                       <span> {interes} </span> 
+                       <span className="label label-secondary labelInterest">$ {interes} </span> 
                       </div>
                 
                     </div>
                   </div>
                 </div>
-              </div> 
+              </div>  
+              
+              </div>
+            </div>
+
+            <div className="">
+                    <button className="btn" onClick={() => getInterest()}>Obtener Interés</button>
+                    <button className="btn" onClick={() => doClean()}>Limpiar</button>
+                  </div>
+
+        </div>
+
+  
+  {/*       <div className="container">
+              <div className="flexDivColumn">
+                <div className="col-12">
+                  <div className="flexDivColumn">
+                    <button className="btn" onClick={() => getInterest()}>Obtener Interés</button>
+                    <button className="btn" onClick={() => doClean()}>Limpiar</button>
+                  </div>
+                </div>
+              </div>
+       </div>  */}
+
+
+
+          <div className="columnFlex" style={{backgroundColor: "lightblue"}}>
+             LUEGO
           </div>
 
         </div>

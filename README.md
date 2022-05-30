@@ -19,3 +19,9 @@ parameters.
 ### State of Project
 Casual code.
 
+### Others
+
+Styles
+
+https://picturepan2.github.io/spectre/
+

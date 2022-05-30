@@ -14,14 +14,12 @@
 }
 
 .App-header {
-  background-color: #f9f9fa;
-  min-height: 100vh;
+  margin-left: 50px;
+}
+
+.containerPrincipal {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
 }
 
 .App-link {
@@ -53,18 +51,31 @@
   color: black;
 }
 
+.divCuadro {
+  border-color: rgb(4, 44, 44);
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.labelInterest {
+  font-size: 40px;
+}
+
+/*BUTTONS*/
+
+.rowButtons {
+  border: .05rem solid #ffffff ;
+  height: 3.4rem !important;
+  padding: 1.05rem 1.3rem !important;
+  font-weight: bolder;
+}
+
 .labelButton {
   display: flex;
   flex-direction: column;
   width: 20px;
   /*align-items: center;
   justify-content: center;*/
-}
-
-.divCuadro {
-  border-color: rgb(4, 44, 44);
-  border-radius: 2px;
-  border-style: solid;
 }
 
 .classButtonPrimary {
@@ -83,6 +94,52 @@
   border-style: solid;
 }
 
-.containerPrincipal {
+
+
+/*INPUTS*/
+
+.inputUnderline {
+    border: 0;
+    border-bottom: 1px solid #5755d9;
+}
+
+/*ROWS AND COLUMNS*/
+
+.rowFlex {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.columnFlex {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/*IMAGES*/
+
+.myImage1 {
+  width: 235px !important;
+  padding: 4%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/*FONTS*/
+
+.boldFont {
+  font-weight: bolder !important;
+}
+
+/*OTROS*/
+
+.grid-flow {
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+
 }

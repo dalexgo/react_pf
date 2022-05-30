@@ -14,27 +14,27 @@ const RenderInputs = (props) => {
         <div className="flexDivColumn">
           <div className="col-12">
             <div className="flexDivColumn">
-              <div className="col-2"></div>
-              <div className="col-4">
-                <span className="label">Monto</span>
+             
+              <div className="col-12">
+                <span className="label boldFont">Monto</span>
                 <input
                   onChange={(e) => {
                     handleChange(e);
                   }}
                   type="number"
-                  className="form-input"
+                  className="form-input inputUnderline "
                   name="monto"
                   value={props.statePased.monto}
                 />
               </div>
-              <div className="col-4">
-                <span className="label">TNA</span>
+              <div className="col-12">
+                <span className="label boldFont">TNA</span>
                 <input
                   onChange={(e) => {
                     handleChange(e);
                   }}
                   type="number"
-                  className="form-input"
+                  className="form-input inputUnderline "
                   name="tna"
                   value={props.statePased.tna}
                 />
